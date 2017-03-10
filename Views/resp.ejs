@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scout</title>
+    <style>
+        body{
+            margin: 0px;
+            color: #1a1c1a;
+            background-color: #dde4f1;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: aliceblue;
+        }
+        ul {
+            margin: 0px;
+            list-style:none;
+            width: 100%;
+            padding: 0px;
+        }
+        ul li {
+            display: inline;
+        }
+        ul li a {
+            padding-top: 0.3%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            color: #e9e9e9;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
+
+            -o-transition:.4s;
+            -ms-transition:.4s;
+            -moz-transition:.4s;
+            -webkit-transition:.4s;
+            transition:.4s;
+        }
+        .head{
+            height: 200px;
+            background: #464846; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#747474, #464846); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#747474, #464846); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#747474, #464846); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#747474, #464846); /* Standard syntax */
+        }
+        .azul:hover{
+            color: #249cff;
+
+            cursor: pointer;
+            -o-transition:.4s;
+            -ms-transition:.4s;
+            -moz-transition:.4s;
+            -webkit-transition:.4s;
+            transition:.4s;
+        }
+        .laranja:hover{
+            color: #ff8401;
+
+            cursor: pointer;
+            -o-transition:.4s;
+            -ms-transition:.4s;
+            -moz-transition:.4s;
+            -webkit-transition:.4s;
+            transition:.4s;
+        }
+        .bordaAzul{
+            border-left: solid 5px #249cff;
+            width: 800px;
+            background: white;
+        }
+        .bordaLara{
+            border-left: solid 5px #ff8401;
+            width: 800px;
+            background: white;
+        }
+        .footer{
+            height: 200px;
+            background: #464846; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#464846, #363836); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#464846, #363836); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#464846, #363836); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#464846, #363836); /* Standard syntax */
+        }
+    </style>
+</head>
+<body>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<div align="center">
+    <div class="head">
+
+    </div>
+    <div style="background-color: #464846">
+        <nav id="menu">
+            <ul>
+                <li><a href="/" class="laranja">Home</a></li>
+                <li><a href="/login" class="azul">Minha Página</a></li>
+                <li><a href="/cadastro" class="laranja">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div style="height: 8px; background-color: #249cff"></div>
+    <div style="height: 8px; background-color: #ff8401"></div>
+    <br><br><br>
+    <div class="bordaAzul" style="height: 150px; padding-top: 50px">
+        <span style="font-size: 45px"><%=mensagem%></span>
+    </div>
+    <br><br>
+    <div style="height: 8px; background-color: #ff8401"></div>
+    <div style="height: 8px; background-color: #249cff"></div>
+    <div class="footer">
+
+    </div>
+</div>
+</body>
+</html>
